@@ -21,11 +21,11 @@ public class ResponseJsonServlet extends HttpServlet {
         resp.setContentType("application/json"); //json은 컨텐츠 타입을 이걸로 바꿔야 한다.
         resp.setCharacterEncoding("utf-8"); //기본 utf-8로 세팅되어 있어서 별 의미 없다.
 
-        HelloData helloData = new HelloData();
-        helloData.setUsername("kim");
-        helloData.setAge(20);
+        HelloData dto = new HelloData();
+        dto.setUsername("kim");
+        dto.setAge(20);
 
-        String result = objectMapper.writeValueAsString(helloData);
+        String result = objectMapper.writeValueAsString(dto);
         resp.getWriter().write(result);
     }
 }
