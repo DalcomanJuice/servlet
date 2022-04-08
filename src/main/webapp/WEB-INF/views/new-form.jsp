@@ -7,6 +7,7 @@
 </head>
 <body>
 <!-- 상대경로 사용, [현재 URL이 속한 계층 경로 + /save] 상대 경로 무줘건 알고 있어야 한다.-->
+<!-- save는 상대 경로이다.. 머리속에 인식하자.-->
 <form action="save" method="post">
     username: <input type="text" name="username"/>
     age: <input type="text" name="age"/>
