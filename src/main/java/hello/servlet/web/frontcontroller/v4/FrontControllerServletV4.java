@@ -27,7 +27,7 @@ public class FrontControllerServletV4 extends HttpServlet {
     public FrontControllerServletV4() {
         controllerMap.put("/front-controller/v4/members/new-form", new MemberFormControllerV4());   //모든 controller를 넣어준다. 현재 우리 서버랑 동일한 방식이다.
         controllerMap.put("/front-controller/v4/members/save", new MemberSaveControllerV4());
-        controllerMap.put("/front-controller/v4/members/members", new MemberListControllerV4());
+        controllerMap.put("/front-controller/v4/members", new MemberListControllerV4());
     }
 
     @Override
